@@ -18,7 +18,7 @@ export default function Home() {
     .catch(error => console.error("Error fetching data:", error));
 }, []);
   const handleOauth = () => {
-    router.push('https://www.strava.com/oauth/authorize/');
+    router.push('/api/oauth/redirect'); 
   }
   return (
     <div>
